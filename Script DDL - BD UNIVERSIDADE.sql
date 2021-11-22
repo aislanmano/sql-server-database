@@ -1,6 +1,8 @@
-CREATE DATABASE DB_UNIVERSIDADE;
+CREATE DATABASE DB_UNIVERSIDADE
+GO
 
-USE DB_UNIVERSIDADE;
+USE DB_UNIVERSIDADE
+GO
 
 CREATE TABLE ALUNOS
 (
@@ -41,11 +43,11 @@ VALUES('AD10','Banco de Dados I',72,'',1);
 INSERT INTO DISCIPLINAS (codigo,descricao,ch,pre_requisito,professor)
 VALUES('AD20','Banco de Dados II',36,'AD10',1);
 INSERT INTO DISCIPLINAS (codigo,descricao,ch,pre_requisito,professor)
-VALUES('TC10','Teoria da Comunicação I',18,'',2);
+VALUES('TC10','Teoria da ComunicaÃ§Ã£o I',18,'',2);
 INSERT INTO DISCIPLINAS (codigo,descricao,ch,pre_requisito,professor)
 VALUES('PCC10','Projeto de Curso I',320,'LP10',3);
 INSERT INTO DISCIPLINAS (codigo,descricao,ch,pre_requisito,professor)
-VALUES('LP10','Linguagem de Programação I',108,'',4);
+VALUES('LP10','Linguagem de ProgramaÃ§Ã£o I',108,'',4);
 
 CREATE TABLE MATRICULA
 (
