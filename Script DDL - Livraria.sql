@@ -3,20 +3,20 @@ CREATE DATABASE LIVRARIA;
 USE LIVRARIA;
 
 CREATE TABLE EDITORA (
-codeditora integer NOT NULL auto_increment,
+codeditora integer NOT NULL identity,
 nome varchar(100) NOT NULL,
 CONSTRAINT PK_edi_codeditora PRIMARY KEY(codeditora)
 );
 
 CREATE TABLE ASSUNTO (
-codsigla integer not null auto_increment,
+codsigla integer not null identity,
 sigla char(1) NOT NULL,
 assunto varchar(100) NOT NULL,
 CONSTRAINT PK_ass_cod_sigla PRIMARY KEY(codsigla)
 );
 
 CREATE TABLE LOJA (
-codloja integer NOT NULL auto_increment,
+codloja integer NOT NULL identity,
 CNPJ integer,
 nome varchar(150) NOT NULL,
 email varchar(80),
@@ -24,7 +24,7 @@ CONSTRAINT PK_loj_codloja PRIMARY KEY(codloja)
 );
 
 CREATE TABLE LIVRO (
-codlivro integer not null auto_increment,
+codlivro integer not null identity,
 titulo varchar(50) NOT NULL,
 datapublicacao Date,
 numpags integer,
@@ -36,7 +36,7 @@ CONSTRAINT PK_liv_codlivro PRIMARY KEY(codlivro)
 );
 
 CREATE TABLE AUTOR (
-codautor integer NOT NULL auto_increment,
+codautor integer NOT NULL identity,
 nome varchar(150) NOT NULL,
 CPF integer NOT NULL,
 datanasc date,
@@ -49,14 +49,14 @@ CONSTRAINT CK_aut_sexo CHECK(sexo in('M','F'))
 );
 
 CREATE TABLE LIVRO_AUTORIA (
-CodLivroAutoria integer NOT NULL auto_increment,
+CodLivroAutoria integer NOT NULL identity,
 codlivro integer NOT NULL,
 codautor integer NOT NULL,
 CONSTRAINT FK_livaut_codLivroautoria PRIMARY KEY (codlivroautoria)
 );
 
 CREATE TABLE CARTAO (
-  codcartao integer not null auto_increment,
+  codcartao integer not null identity,
   descricaocartao varchar(30) not null,
   categoria varchar(20),
   tipocartao varchar(10),
@@ -64,7 +64,7 @@ CREATE TABLE CARTAO (
 );
 
 CREATE TABLE CLIENTE (
-codcliente integer not null auto_increment,
+codcliente integer not null identity,
 CPF integer,
 datanasc date,
 nome varchar(150) NOT NULL,
@@ -75,7 +75,7 @@ CONSTRAINT PK_cli_codcliente PRIMARY KEY(codcliente)
 );
 
 CREATE TABLE VENDA (
-codvenda integer not null auto_increment,
+codvenda integer not null identity,
 total numeric(6,2),
 datavenda date,
 codloja integer,
@@ -84,7 +84,7 @@ CONSTRAINT PK_ven_codvenda PRIMARY KEY(codvenda)
 );
 
 CREATE TABLE ITENSVENDA (
-coditemvenda integer not null auto_increment,
+coditemvenda integer not null identity,
 quantidade integer NOT NULL,
 precounitario numeric(6,2),
 precototalunitario numeric(6,2),
@@ -102,7 +102,7 @@ CONSTRAINT PK_edi_codeditoraaux primary key(codeditora)
 CREATE TABLE LOG(usuario varchar(100), datahora varchar(25));
 
 CREATE TABLE AUDITORIA(
-                      codlivro integer not null auto_increment,
+                      codlivro integer not null identity,
                       precoantigo numeric(6,2),
                       preconovo numeric(6,2),
                       datahora datetime,
