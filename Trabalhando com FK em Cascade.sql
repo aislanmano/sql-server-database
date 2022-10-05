@@ -43,12 +43,16 @@ DROP TABLE aluno_curso;
     PRIMARY KEY (aluno_id, curso_id),
 
     FOREIGN KEY (aluno_id) REFERENCES aluno (id)  ON DELETE CASCADE,
-
     FOREIGN KEY (curso_id) REFERENCES curso (id)
-
 );
 
 INSERT INTO aluno_curso (aluno_id, curso_id) VALUES (1,1);
 INSERT INTO aluno_curso (aluno_id, curso_id) VALUES (2,1);
 INSERT INTO aluno_curso (aluno_id, curso_id) VALUES (3,1);
 INSERT INTO aluno_curso (aluno_id, curso_id) VALUES (1,3);
+
+SELECT aluno.nome as "Nome do Aluno",
+       curso.nome as "Nome do Curso"
+    FROM aluno
+    JOIN aluno_curso ON aluno_curso.aluno_id = aluno.id
+    JOIN curso ON curso.id = aluno_curso.curso_id
