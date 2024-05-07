@@ -135,7 +135,7 @@ INSERT INTO ASSUNTO(sigla, assunto) VALUES('E', 'Engenharia de Software');
 INSERT INTO LIVRO(titulo, preco, numpags, datapublicacao, codeditora, codsigla, codloja) VALUES ('BANCO DE DADOS PARA A WEB', 31.25, 55, '1999-01-20', 1, 1, 1);
 INSERT INTO LIVRO(titulo, preco, numpags, datapublicacao, codeditora, codsigla, codloja) VALUES ('PROGRAMANDO EM LINGUAGEM C', 30.55, 47, '1997-10-01', 1, 2, 1);
 INSERT INTO LIVRO(titulo, preco, numpags, datapublicacao, codeditora, codsigla, codloja) VALUES ('PROGRAMANDO EM LINGUAGEM C++', 111.52, 103, '1998-11-01', 3, 2, 1);
-INSERT INTO LIVRO(titulo, preco, numpags, datapublicacao, codeditora, codsigla, codloja) VALUES ('BANCO DE DADOS NA BIOINFORMATICA', 48.99, 66, '02015-05-05', 2, 1, 1);
+INSERT INTO LIVRO(titulo, preco, numpags, datapublicacao, codeditora, codsigla, codloja) VALUES ('BANCO DE DADOS NA BIOINFORMATICA', 48.99, 66, '2015-05-05', 2, 1, 1);
 INSERT INTO LIVRO(titulo, preco, numpags, datapublicacao, codeditora, codsigla, codloja) VALUES ('REDES DE COMPUTADORES', 42.20, 93, '2003-10-10', 2, 3, 1);
 INSERT INTO LIVRO(titulo, preco, numpags, datapublicacao, codeditora, codsigla, codloja) VALUES ('RESUMO DO GUIA PMBOOK', 21.25, 87, '1996-09-01', 2, 5, 2);
 INSERT INTO LIVRO(titulo, preco, numpags, datapublicacao, codeditora, codsigla, codloja) VALUES ('CONCEITOS DE ENGENHARIA DE SOFTWARE', 30.55, 76, '1996-09-01', 3, 6, 2);
