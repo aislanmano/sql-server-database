@@ -9,70 +9,40 @@ CREATE TABLE ALUNOS
     codigo_aluno int not null primary key,
     nome varchar(60) not null,
     data_nascimento date not null,
-    sexo char(1) not null
+    sexo char(1) not null,
+	email varchar(50) null
 );
 
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (1, 'Maria José da Silva', '1980-05-01', 'F');
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (2, 'André Carlos Ferreira', '1982-10-16', 'M');
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (3, 'Alice das Maravilhas', '1984-06-22', 'M');
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (4, 'Carlos Vieira Santos', '1981-02-10', 'M');
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (5, 'Mara Caroline Costa', '1983-12-21', 'F');
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (6, 'Antenor da Cruz', '1981-11-15', 'M');
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (7, 'Luzia Guimarães Souza', '1982-03-03', 'F');
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (8, 'Carla Beatriz Carreira', '1984-08-14', 'F');
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (9, 'Juliano Silva Costa', '1981-02-10', 'M');
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (10, 'Mileide Santa', '1983-12-21', 'F');
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (11, 'Matheus da Cruz Silva Santo', '1981-11-15', 'M');
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (12, 'Rafaela Dias Santos', '1982-03-03', 'F');
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (13, 'Katia Arruda Ciqueira', '1984-08-14', 'F');
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (14, 'Marcos Ferreira Mendes', '1981-02-10', 'M');
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (15, 'Marta Silva', '1983-12-21', 'F');
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (16, 'Jamez Rodrigues', '1981-11-15', 'M');
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (17, 'Luciana Neta Silva', '1982-03-03', 'F');
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (18, 'Manoela Santa', '1984-05-06', 'F');
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (19, 'Beatriz Correia', '1990-08-14', 'F');
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (20, 'Daniela Medeiros', '1983-08-14', 'F');
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (21, 'Fernanda Santana', '1900-06-08', 'F');
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (22, 'Francisca Silva Cruz', '1998-08-02', 'F');
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (23, 'Vinicius Ferrari', '1998-07-01', 'M');
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (24, 'Zenaide Ceus', '1900-08-05', 'F');
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (25, 'Tiago Manoel Silva', '1980-05-05', 'M');
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (26, 'Pietra Cardoso', '1984-01-01', 'F');
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (27, 'Arismar Souza', '1982-03-05', 'M');
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (28, 'Jackson Antunes', '1991-01-01', 'M');
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (29, 'Eveson Vieira Neto', '1982-03-09', 'M');
-INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo)
-VALUES (30, 'Tina Tuner Mineira', '1980-03-30', 'F');
-
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (1, 'Maria José da Silva', '1980-05-01', 'F','Mariajo01@gmail.com');
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (2, 'André Carlos Ferreira', '1982-10-16', 'M','Andrepereira@gmail.com');
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (3, 'Alice das Maravilhas', '1984-06-22', 'M','Alice@gmail.com');
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (4, 'Carlos Vieira Santos', '1981-02-10', 'M','Carlosv@gmail.com');
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (5, 'Mara Caroline Costa', '1983-12-21', 'F','');
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (6, 'Antenor da Cruz', '1981-11-15', 'M','Antenor @gmail.com');
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (7, 'Luzia Guimarães Souza', '1982-03-03', 'F','');
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (8, 'Carla Beatriz Carreira', '1984-08-14', 'F','Carlabe32@gmail.com');
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (9, 'Juliano Silva Costa', '1981-02-10', 'M','Juliano silva@gmail.com');
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (10, 'Mileide Santa', '1983-12-21', 'F','Mileide10@gmail.com');
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (11, 'Matheus da Cruz Silva Santo', '1981-11-15', 'M','Matheuscrsu@gmail.com');
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (12, 'Rafaela Dias Santos', '1982-03-03', 'F','Rafaela12@gmail.com');
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (13, 'Katia Arruda Ciqueira', '1984-08-14', 'F','');
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (14, 'Marcos Ferreira Mendes', '1981-02-10', 'M','Marcosf10@gmail.com');
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (15, 'Marta Silva', '1983-12-21', 'F','Martasi90@gmail.com');
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (16, 'Jamez Rodrigues', '1981-11-15', 'M','Jamezro@gmail.com');
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (17, 'Luciana Neta Silva', '1982-03-03', 'F','Luciana51@gmail.com');
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (18, 'Manoela Santa', '1984-05-06', 'F','Manoelasilva@gmail.com');
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (19, 'Beatriz Correia', '1990-08-14', 'F','Beatriz20@gmail.com');
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (20, 'Daniela Medeiros', '1983-08-14', 'F','Danielapereira@gmail.com');
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (21, 'Fernanda Santana', '1900-06-08', 'F','');
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (22, 'Francisca Silva Cruz', '1998-08-02', 'F','Francisca@gmail.com');
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (23, 'Vinicius Ferrari', '1998-07-01', 'M','Vinicius@gmail.com');
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (24, 'Zenaide Ceus', '1900-08-05', 'F','Zenaide10@gmail.com');
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (25, 'Tiago Manoel Silva', '1980-05-05', 'M','Tiagomacedo@gmail.com');
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (26, 'Pietra Cardoso', '1984-01-01', 'F','');
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (27, 'Arismar Souza', '1982-03-05', 'M','Arismar10@gmail.com');
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (28, 'Jackson Antunes', '1991-01-01', 'M','Jacksonantunes@gmail.com');
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (29, 'Everson Vieira Neto', '1982-03-09', 'M','Eversonvieira@gmail.com');
+INSERT INTO ALUNOS (codigo_aluno, nome, data_nascimento, sexo, email) VALUES (30, 'Tina Tuner Mineira', '1980-03-30', 'F','tinatuner@gmail.com');
 	
 CREATE TABLE CURSO
 (   
@@ -511,3 +481,4 @@ INSERT INTO NOTAS_ALUNOS (codigo_notas, codigo_matricula_curso_disciplina, falta
 INSERT INTO NOTAS_ALUNOS (codigo_notas, codigo_matricula_curso_disciplina, faltas, bimestre, notaprovaparcial, notaprova) VALUES (178, 178, 1, 1, 9.5, 5);
 INSERT INTO NOTAS_ALUNOS (codigo_notas, codigo_matricula_curso_disciplina, faltas, bimestre, notaprovaparcial, notaprova) VALUES (179, 179, 0, 1, 9.5, 5.5);
 INSERT INTO NOTAS_ALUNOS (codigo_notas, codigo_matricula_curso_disciplina, faltas, bimestre, notaprovaparcial, notaprova) VALUES (180, 180, 1, 1, 9.5, 6);
+
